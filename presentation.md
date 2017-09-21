@@ -225,7 +225,7 @@ Object.prototype ➟ dog ➟ puppy
 
 ---
 
-## Inheritance in the Real World
+## [fit] Inheritance in the Real World
 
 ---
 
