@@ -188,7 +188,7 @@ dog.toString = function () {
    output += ((this.vaccinated)? 'and vaccinated.' : 'and not vaccinated.');
 
    return output;
-}
+};
 
 dog.toString();                 // This dog is adoptable and not vaccinated.
 dog.hasOwnProperty('toString'); // true, because toString shadows the inherited prototype method for toString
