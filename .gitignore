@@ -5,6 +5,7 @@
 !images/*
 
 !.gitignore
+!README.md
 !presentation.md
 !presentation.pdf
 
