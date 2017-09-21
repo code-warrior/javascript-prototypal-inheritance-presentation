@@ -49,7 +49,7 @@ window.onload = function () {
     console.log(`\n`);
 
     console.log(`%cThe LX includes…%c`, bold, normal);
-    for (let property in LX) {
+    for (let property in LX) { // Iterate over all the enumerable properties
         console.log(`— %c${property}%c: ${LX[property]}`,
             bold, normal);
     }
