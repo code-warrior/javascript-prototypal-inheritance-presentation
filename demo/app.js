@@ -50,10 +50,8 @@ window.onload = function () {
 
     console.log(`%cThe LX includes…%c`, bold, normal);
     for (let property in LX) {
-        if (LX.hasOwnProperty(property)) {
-            console.log(`— %c${property}%c: ${LX[property]}`,
-                bold, normal);
-        }
+        console.log(`— %c${property}%c: ${LX[property]}`,
+            bold, normal);
     }
 
     console.log(`\n`);
