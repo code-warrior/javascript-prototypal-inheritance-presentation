@@ -80,10 +80,10 @@ let dog = {
    cute: true
 };
 
-dog.hasOwnProperty('ugly');                  // false
-dog.hasOwnProperty('cute');                  // true
-dog.hasOwnProperty('toString');              // false
-Object.prototype.hasOwnProperty('toString'); // true
+dog.hasOwnProperty(`ugly`);                  // false
+dog.hasOwnProperty(`cute`);                  // true
+dog.hasOwnProperty(`toString`);              // false
+Object.prototype.hasOwnProperty(`toString`); // true
 ````
 
 ^ toString is another of the five base methods.
@@ -106,14 +106,14 @@ let dog = {
    vaccinated: true
 };
 
-Object.defineProperty(dog, 'name', {
-   value: 'Spot',
+Object.defineProperty(dog, `name`, {
+   value: `Spot`,
    enumerable: false
 });
 
-dog.propertyIsEnumerable('adoptable');  // true
-dog.propertyIsEnumerable('vaccinated'); // true
-dog.propertyIsEnumerable('name');       // false
+dog.propertyIsEnumerable(`adoptable`);  // true
+dog.propertyIsEnumerable(`vaccinated`); // true
+dog.propertyIsEnumerable(`name`);       // false
 
 console.log('Please adopt ' + dog.name + '. He’s…');
 
@@ -182,16 +182,16 @@ dog.toString(); // [object Object]
 
 // Over-ride the inherited toString method in the prototype
 dog.toString = function () {
-   let output = 'This dog is ';
+   let output = `This dog is `;
 
-   output += ((this.adoptable) ? 'adoptable ' : 'not adoptable ');
-   output += ((this.vaccinated)? 'and vaccinated.' : 'and not vaccinated.');
+   output += ((this.adoptable) ? `adoptable ` : `not adoptable `);
+   output += ((this.vaccinated)? `and vaccinated.` : `and not vaccinated.`);
 
    return output;
 };
 
 dog.toString();                 // This dog is adoptable and not vaccinated.
-dog.hasOwnProperty('toString'); // true, because toString shadows the inherited prototype method for toString
+dog.hasOwnProperty(`toString`); // true, because toString shadows the inherited prototype method for toString
 ````
 
 ---
