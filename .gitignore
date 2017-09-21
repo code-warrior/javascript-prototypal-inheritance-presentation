@@ -11,5 +11,6 @@
 !presentation.pdf
 
 .DS_Store
+.idea
 
 !*/
