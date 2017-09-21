@@ -220,7 +220,7 @@ Object.prototype.isPrototypeOf(dog); // true
 dog.isPrototypeOf(puppy);            // true
 
 // The prototype chain, or prototypal inheritance, looks like…
-Object.prototype → dog → puppy
+Object.prototype ➟ dog ➟ puppy
 ````
 
 ---
