@@ -115,10 +115,10 @@ dog.propertyIsEnumerable(`adoptable`);  // true
 dog.propertyIsEnumerable(`vaccinated`); // true
 dog.propertyIsEnumerable(`name`);       // false
 
-console.log('Please adopt ' + dog.name + '. He’s…');
+console.log(`Please adopt ${dog.name}. He’s…`);
 
 for (let property in dog) {
-   console.log('— ' + property);
+   console.log(`— ${property}`);
 }
 ````
 
