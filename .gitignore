@@ -1,0 +1,12 @@
+*
+
+!demo/*
+!examples/*
+!images/*
+
+!.gitignore
+!presentation.md
+
+.DS_Store
+
+!*/
