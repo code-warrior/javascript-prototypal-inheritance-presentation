@@ -52,7 +52,7 @@ window.onload = function () {
     console.log(`%cThe LX includes…%c`, bold, normal);
     for (let property in LX) {
         if (LX.hasOwnProperty(property)) {
-            console.log(`— %c` + property + `%c: ` + LX[property],
+            console.log(`— %c${property}%c: ${LX[property]}`,
                 bold, normal);
         }
     }
@@ -62,10 +62,10 @@ window.onload = function () {
     console.log(`%cThe Sport includes…%c`, bold, normal);
     for (let property in sport) {
         if (sport.hasOwnProperty(property)) {
-            console.log(`— %c` + property + `%c: ` + sport[property],
+            console.log(`— %c${property}%c: ${sport[property]}`,
                 bold, normal);
         } else {
-            console.log(`— %c` + property + `%c: ` + sport[property],
+            console.log(`— %c${property}%c: ${sport[property]}`,
                 green, normal);
         }
     }
@@ -75,10 +75,10 @@ window.onload = function () {
     console.log(`%cThe Sport Special Edition includes…%c`, bold, normal);
     for (let property in sportSE) {
         if (sportSE.hasOwnProperty(property)) {
-            console.log(`— %c` + property + `%c: ` + sportSE[property],
+            console.log(`— %c${property}%c: ${sportSE[property]}`,
                 bold, normal);
         } else {
-            console.log(`— %c` + property + `%c: ` + sportSE[property],
+            console.log(`— %c${property}%c: ${sportSE[property]}`,
                 green, normal);
         }
     }
