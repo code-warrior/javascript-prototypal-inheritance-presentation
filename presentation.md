@@ -1,7 +1,7 @@
 slidenumbers: true
 autoscale: true
 build-lists: true
-theme: work, 7
+theme: titillium, 1
 
 [.hide-footer]
 
