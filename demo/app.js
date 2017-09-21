@@ -38,7 +38,6 @@ window.onload = function () {
     sportSE[`front-seats`] = `Heated`;
     sportSE.badging = `Special Edition`;
 
-
     if (Object.prototype.isPrototypeOf(LX)) {   // LX inherits from the base
         if (LX.isPrototypeOf(sport)) {          // sport inherits from LX
             if (sport.isPrototypeOf(sportSE)) { // sportSE inherits from sport
